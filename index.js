@@ -12,7 +12,8 @@ const cuentaDeLeonardo = new CuentaCorriente(cliente, '1', '001');
 const cuentaDeMaria = new CuentaCorriente(cliente2,'2','002');
 
 const cuentaAhorroLeonardo = new CuentaAhorro(cliente,'9985','001',0);
+console.log(cuentaAhorroLeonardo);//Cuenta se permite porque solamente es extensible
 
 const cuentaSimple = new Cuenta(cliente,'098','001',100);
 
-console.log(cuentaSimple);
+console.log(cuentaSimple);//No se permite porque es una cuenta abstracta
