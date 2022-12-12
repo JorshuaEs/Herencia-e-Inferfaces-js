@@ -4,4 +4,8 @@ export class CuentaAhorro extends Cuenta {
         super(cliente,numero,agencia,saldo);
  
     }
+
+    retirarDeCuenta(valor) {
+        super._retirarDeCuenta(valor,2);
+    }
 }
